@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+}
+
+#container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+		"nav nav nav"
+		"header header header"
+		"main main main"
+		"footer footer footer";
+		grid-gap: 15px;
+	}
+
+header {
+	grid-area: header;
+	text-align: center;
+}
+header h1{
+	position: relative;
+	transition: width 2s, height 2s, transform 1s;
+}
+
+header h1:hover {
+  	transform: scale(1.2,1.2);
+}
+
+nav {
+	grid-area: nav;
+	text-align: center;
+	background: black;
+}
+
+nav li {
+	display: inline-block;
+	padding: 10px;
+	width: 200px;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #eee;
+	padding: 25px;
+}
+
+nav li a:hover{
+	background-color: grey;
+}
+
+main {
+	grid-area: main;
+}
+	
+footer {
+	grid-area: footer;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	background-color: black;
+}
+
+footer a{
+	text-decoration: none;
+	color: #eee;
+	padding: 16px;
+}
+
+footer a :hover {
+}
+
+h1 {
+	font-size: 80px;
+}
+
+h4 {
+	font-size: 27px;
+}
+
+h5 {
+	font-size: 22px;
+}
+
+table {
+	border: none;
+}
+
+table tr{
+	margin-top: 20px;
+	display: block;
+	border-bottom: 2px solid #ddd;
+}
+
+table td {
+	text-align: left;
+	border-bottom: 1px dotted #ccc;
+}
+
+button {
+	background-color: black;
+	border: black;
+	padding: 10px;
+	margin: 10px;
+	transition: padding 2s;
+}
+
+button a {
+	color: white;
+	text-decoration: none;
+}
+
+button a:hover {
+	padding: 15px;
+	transform:scale(1.2)
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.image {
+	height: auto;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.self {
+	border-radius: 50%;
+}
+
+.home {
+	margin: 45px;
+}
+
+.profile {
+	margin-top: 20px;
+	border-radius: 60px;
+	padding: 40px;
+}
+
+.photo {
+	display: inline-block;
+	padding: 50px;
+}
+
+.photo img {
+	position:relative;
+	cursor:pointer;
+	transition:all .4s linear;
+	width:50%;
+}
+
+.photo:hover img {
+	transform:scale(1.2);
+}
+
+.icon img{
+	width: 50px;
+	height: 50px;
+	margin: 23px;
+	position:relative;
+	cursor:pointer;
+	transition:all .4s linear;
+}
+
+.icon:hover img {
+	transform:scale(1.2);
+}
+
+.shadow {
+	box-shadow: 4px 4px 4px black;
+}
+
+.form {
+	width: 300px;
+	height: 30px;
+}
+
+.submit {
+	width: 140px;
+	height: 50px;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+}
